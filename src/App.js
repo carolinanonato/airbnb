@@ -14,9 +14,9 @@ export default function App() {
       <Navbar />
       <Hero />
       <div className="test">
-        <Card src={katie} rating={6} text={"Life lessons with Katie Zaferes"} price={136} />
-        <Card src={wedding} rating={6} text={"Learn wedding photography"} price={136} />
-        <Card src={bike} rating={6} text={"Group Mountain Biking"} price={136} />
+        <Card src={katie} rating={5.0} reviewCount={6} country={"USA"} text={"Life lessons with Katie Zaferes"} price={136} />
+        <Card src={wedding} rating={5.0} reviewCount={30} country={"USA"} text={"Learn wedding photography"} price={136} />
+        <Card src={bike} rating={4.8} reviewCount={2} country={"USA"} text={"Group Mountain Biking"} price={136} />
       </div>
     </div >
   )
