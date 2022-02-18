@@ -12,10 +12,18 @@ nav {
   display: flex;
   padding: 20px 36px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
-
 }
 
-.nav--logo{
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+  margin-left: 5px;
+}
+
+.nav--logo {
   max-width: 100px;
 }
 
@@ -34,30 +42,39 @@ section {
 }
 
 .hero--header {
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .hero--text {
   margin-top: 0;
 }
 
-.card {
-  width: 175px;
-  font-size: 12px;
-  margin-right: 18px;
-
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
-.card:nth-child(1){
-  margin-left: 37px;
+.card {
+  position: relative;
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: column; 
 }
 
 .card--image {
   width: 100%;
   border-radius: 9px;
-  width: 176px;
-  height: 235px;
+  margin-bottom: 9px;
+}
 
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card--stats {
@@ -67,17 +84,21 @@ section {
 
 .card--star {
   height: 14px;
+  margin-right: 2px
 }
 
-.gray {
-  color: #918E9B;
+
+.card--price {
+  margin-top: auto;
 }
 
-.bold {
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left:6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
   font-weight: bold;
-}
 
-.test {
-  display: flex;
- 
 }
